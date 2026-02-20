@@ -1,0 +1,294 @@
+/* GENERAL ELEMENTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+/* CONTAINERS */
+
+#main-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#form-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container {
+    text-align: right;
+}
+
+#banner-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-container {
+    text-align: center;
+}
+
+/* LOGIN FORM */
+
+#form-box {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    margin-top: 30px;
+    width: 350px;
+}
+
+#logo-instagram {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    border: 1px solid #DBDBDB;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+}
+
+#login-form input[type="submit"] {
+    background-color: #B2DFFC;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* SEPARATOR */
+
+.separator {
+    position: relative;
+}
+
+.line {
+    border-top: 1px solid #DBDBDB;
+    width: 168px;
+    margin: 25px auto 35px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    top: -6px;
+    width: 50px;
+    background-color: #FFFFFF;
+    color: #BBBBBB;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+/* FACEBOOK LOGIN */
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#facebook-login span {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* FORGOT PASSWORD */
+
+#forgot-password {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#forgot-password a {
+    text-decoration: none;
+    color: #373799;
+}
+
+/* NEW REGISTER */
+
+#register-container {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    margin-top: 10px;
+    width: 350px;
+    padding: 25px;
+}
+
+#register-container {
+    font-size: 14px;
+    color: #262626;
+}
+
+#register-container a {
+    text-decoration: none;
+    color: #4A95F6;
+    font-weight: bold;
+}
+
+/* GET APP */
+
+#get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
+#get-app-container p {
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+#get-app-container a {
+    text-decoration: none;
+}
+
+#get-app-container img {
+    width: 136px;
+    height: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer-links {
+    display: flex;
+    list-style: none;
+}
+
+#footer-links li {
+    margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+    text-decoration: none;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+
+    #main-container {
+        width: 100%;
+        max-width: 920px;
+        margin: 30px auto 0;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    #banner-container,
+    #form-container {
+        width: auto;
+        flex: 1 1 0;
+    }
+
+    #banner-container img {
+        max-width: 320px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 320px;
+    }
+
+    footer {
+        width: 90%;
+        margin-top: 35px;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-color: #FFFFFF;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #main-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+}
