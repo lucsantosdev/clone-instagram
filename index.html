@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo UI/UX - Instagram Login (Old vs New)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Estudo de caso • Meta / Instagram</p>
+            <h1>Comparativo de UI/UX: Login do Instagram (Old vs New)</h1>
+            <p class="subtitle">
+                Um artigo interativo para analisar decisões de interface, hierarquia visual, legibilidade,
+                microinterações e usabilidade no redesign da experiência de login.
+            </p>
+            <nav class="section-nav" aria-label="Navegação do artigo">
+                <a href="#comparativo">Comparativo</a>
+                <a href="#wireframes">Wireframes</a>
+                <a href="#analise">Análise</a>
+                <a href="#matriz">Matriz UX</a>
+                <a href="#boas-praticas">Boas práticas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-layout">
+        <section class="section" id="comparativo">
+            <div class="section-title-wrap">
+                <h2>Comparativo visual em tempo real</h2>
+                <p>Visualize as duas implementações lado a lado e compare estrutura, escala tipográfica e densidade de informação.</p>
+            </div>
+
+            <div class="live-grid">
+                <article class="preview-card old" aria-labelledby="old-title">
+                    <div class="card-head">
+                        <h3 id="old-title">Old Version</h3>
+                        <span class="badge">Base histórica</span>
+                    </div>
+                    <iframe
+                        src="old-version/index.html"
+                        title="Prévia da versão antiga da página de login"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+
+                <article class="preview-card new" aria-labelledby="new-title">
+                    <div class="card-head">
+                        <h3 id="new-title">New Version</h3>
+                        <span class="badge highlight">Versão evoluída</span>
+                    </div>
+                    <iframe
+                        src="new-version/index.html"
+                        title="Prévia da nova versão da página de login"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="wireframes">
+            <div class="section-title-wrap">
+                <h2>Wireframes comparativos</h2>
+                <p>Mapeamento estrutural dos blocos principais para facilitar leitura de layout e decisões de composição.</p>
+            </div>
+
+            <div class="wireframe-grid">
+                <article class="wireframe-card">
+                    <h3>Wireframe • Old Version</h3>
+                    <div class="wireframe old">
+                        <div class="wf-block wf-hero">Área visual</div>
+                        <div class="wf-block wf-form">Formulário</div>
+                        <div class="wf-block wf-actions">Ações secundárias</div>
+                        <div class="wf-block wf-footer">Links institucionais</div>
+                    </div>
+                    <p class="wireframe-note">Composição mais compacta e foco no preenchimento rápido.</p>
+                </article>
+
+                <article class="wireframe-card">
+                    <h3>Wireframe • New Version</h3>
+                    <div class="wireframe new">
+                        <div class="wf-block wf-brand">Branding ampliado</div>
+                        <div class="wf-block wf-hero">Mensagem principal</div>
+                        <div class="wf-block wf-form">Formulário com maior conforto visual</div>
+                        <div class="wf-block wf-actions">Ações com hierarquia mais evidente</div>
+                        <div class="wf-block wf-footer">Rodapé informacional</div>
+                    </div>
+                    <p class="wireframe-note">Estrutura com maior respiro e storytelling visual mais claro.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="analise">
+            <div class="section-title-wrap">
+                <h2>Análise aprofundada de conceitos UI/UX</h2>
+                <p>Selecione um tópico para ver o diagnóstico comparativo e o impacto percebido na experiência do usuário.</p>
+            </div>
+
+            <div class="analysis-controls" role="tablist" aria-label="Tópicos de análise">
+                <button class="topic-btn active" data-topic="hierarquia" role="tab" aria-selected="true">Hierarquia visual</button>
+                <button class="topic-btn" data-topic="legibilidade" role="tab" aria-selected="false">Legibilidade</button>
+                <button class="topic-btn" data-topic="acoes" role="tab" aria-selected="false">Ações e feedback</button>
+                <button class="topic-btn" data-topic="consistencia" role="tab" aria-selected="false">Consistência</button>
+            </div>
+
+            <div class="analysis-panels">
+                <article class="analysis-panel active" data-topic="hierarquia" role="tabpanel">
+                    <h3>Hierarquia visual</h3>
+                    <p>
+                        A nova versão aumenta o contraste entre níveis de informação: título, formulário e ações secundárias.
+                        Isso reduz carga cognitiva inicial e melhora escaneabilidade, especialmente para usuários recorrentes.
+                    </p>
+                    <ul>
+                        <li>Melhor separação entre conteúdo de marca e tarefa principal (login).</li>
+                        <li>Maior previsibilidade na ordem de leitura (F/Z pattern).</li>
+                        <li>Uso mais claro de pesos tipográficos para orientar atenção.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="legibilidade" role="tabpanel" hidden>
+                    <h3>Legibilidade e conforto visual</h3>
+                    <p>
+                        O redesign privilegia áreas de toque maiores, espaçamentos generosos e contraste suave, equilibrando
+                        acessibilidade com estética de marca.
+                    </p>
+                    <ul>
+                        <li>Campos mais altos e com melhor área clicável.</li>
+                        <li>Line-height e respiro entre blocos favorecem leitura contínua.</li>
+                        <li>Rodapé com melhor organização para navegação institucional.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="acoes" role="tabpanel" hidden>
+                    <h3>Ações primárias e feedback</h3>
+                    <p>
+                        A ação principal (“Entrar”) é destacada por cor e dimensão, enquanto ações alternativas possuem estilo
+                        secundário consistente, facilitando decisões rápidas.
+                    </p>
+                    <ul>
+                        <li>CTA primário visualmente dominante.</li>
+                        <li>Ações de suporte posicionadas após a tarefa principal.</li>
+                        <li>Padrão de botões previsível para reduzir erros de clique.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="consistencia" role="tabpanel" hidden>
+                    <h3>Consistência e sistema de interface</h3>
+                    <p>
+                        A versão nova mostra maior consistência de raio, espaçamento e componentes, aproximando a implementação
+                        de um design system sustentável para evolução do produto.
+                    </p>
+                    <ul>
+                        <li>Escalas tipográficas mais coerentes entre seções.</li>
+                        <li>Ritmo visual uniforme em campos e botões.</li>
+                        <li>Maior capacidade de adaptação responsiva sem quebra de layout.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="matriz">
+            <div class="section-title-wrap">
+                <h2>Matriz comparativa de experiência</h2>
+                <p>Avaliação qualitativa de critérios de UI/UX para orientar decisões de evolução de interface.</p>
+            </div>
+
+            <div class="matrix">
+                <div class="matrix-row head">
+                    <span>Critério</span>
+                    <span>Old Version</span>
+                    <span>New Version</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Clareza da tarefa</span>
+                    <span>Boa</span>
+                    <span>Excelente</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Hierarquia visual</span>
+                    <span>Média</span>
+                    <span>Alta</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Acessibilidade de leitura</span>
+                    <span>Média</span>
+                    <span>Alta</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Escalabilidade do design</span>
+                    <span>Média</span>
+                    <span>Alta</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="boas-praticas">
+            <div class="section-title-wrap">
+                <h2>Boas práticas observadas</h2>
+                <p>Diretrizes úteis para aplicar em produtos digitais com foco em conversão e clareza.</p>
+            </div>
+
+            <div class="best-practices">
+                <article>
+                    <h3>1. Priorize uma ação principal</h3>
+                    <p>O CTA principal deve ter contraste e escala superiores aos demais elementos interativos.</p>
+                </article>
+                <article>
+                    <h3>2. Trabalhe densidade com intenção</h3>
+                    <p>Espaçamento consistente melhora legibilidade e reduz sensação de esforço para completar tarefas.</p>
+                </article>
+                <article>
+                    <h3>3. Mantenha consistência visual</h3>
+                    <p>Raio, altura de componentes e tipografia padronizados aumentam confiança e previsibilidade.</p>
+                </article>
+                <article>
+                    <h3>4. Garanta responsividade real</h3>
+                    <p>Layouts fluidos e breakpoints estratégicos preservam a experiência em diferentes dispositivos.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <p>Artigo interativo de estudo UI/UX • Projeto educacional comparativo do login do Instagram.</p>
+    </footer>
+
+    <script src="js/article.js"></script>
+</body>
+</html>
