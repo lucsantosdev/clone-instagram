@@ -403,6 +403,80 @@ h1 {
     color: var(--muted);
 }
 
+.resource-groups {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.resource-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    background: #ffffff;
+}
+
+.resource-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.resource-list {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+.resource-list a {
+    color: #2f4fe0;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+.resource-list a:hover {
+    color: #1f39b8;
+}
+
+.resource-list.books li {
+    color: #33435f;
+}
+
+.heuristics-callout {
+    margin-top: 14px;
+    border: 1px solid #c8d5ff;
+    border-radius: var(--radius-md);
+    background: #f5f8ff;
+    padding: 16px;
+}
+
+.heuristics-callout h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.heuristics-callout p {
+    color: #394b6c;
+}
+
+.heuristics-link {
+    display: inline-flex;
+    margin-top: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #a9bfff;
+    color: #2f4fe0;
+    background: #e8eeff;
+    border-radius: 999px;
+    padding: 8px 12px;
+}
+
+.heuristics-link:hover {
+    border-color: #8ea9f7;
+    background: #dae5ff;
+    color: #203abc;
+}
+
 .article-footer {
     border-top: 1px solid var(--line);
     padding: 18px 16px 24px;
@@ -521,6 +595,35 @@ h1 {
     background: #1c2847;
 }
 
+
+[data-theme="dark"] .resource-card {
+    background: #121b31;
+}
+
+[data-theme="dark"] .resource-list.books li,
+[data-theme="dark"] .heuristics-callout p {
+    color: var(--muted);
+}
+
+[data-theme="dark"] .resource-list a,
+[data-theme="dark"] .heuristics-link {
+    color: #bcd0ff;
+}
+
+[data-theme="dark"] .resource-list a:hover,
+[data-theme="dark"] .heuristics-link:hover {
+    color: #e1eaff;
+}
+
+[data-theme="dark"] .heuristics-callout {
+    background: #1b2746;
+    border-color: #3b5282;
+}
+
+[data-theme="dark"] .heuristics-link {
+    border-color: #4b669d;
+    background: #22325a;
+}
 [data-theme="dark"] .full-view-cta a:hover,
 [data-theme="dark"] .personal-links a:hover {
     color: #e1eaff;
@@ -531,7 +634,8 @@ h1 {
 @media (max-width: 980px) {
     .live-grid,
     .wireframe-grid,
-    .best-practices {
+    .best-practices,
+    .resource-groups {
         grid-template-columns: 1fr;
     }
 
