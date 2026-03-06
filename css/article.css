@@ -39,6 +39,8 @@ body {
 .hero-content {
     max-width: 1140px;
     margin: 0 auto;
+    position: relative;
+    padding-right: 72px;
 }
 
 .eyebrow {
@@ -62,6 +64,57 @@ h1 {
     max-width: 850px;
     color: var(--muted);
     font-size: clamp(16px, 2vw, 20px);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: #24314f;
+    border-radius: 999px;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: #9dafdc;
+    background: #f3f6ff;
+}
+
+.theme-toggle .icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+    display: block;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .section-nav {
@@ -160,6 +213,23 @@ h1 {
     height: 470px;
     border: 0;
     background: #fff;
+}
+
+.full-view-cta {
+    margin-top: 14px;
+    color: #40506e;
+    font-size: 14px;
+}
+
+.full-view-cta a {
+    color: #2f4fe0;
+    font-weight: 600;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+.full-view-cta a:hover {
+    color: #1f39b8;
 }
 
 .wireframe-grid {
@@ -341,6 +411,123 @@ h1 {
     font-size: 14px;
 }
 
+.footer-title {
+    color: #2a3954;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.personal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.personal-links a {
+    text-decoration: none;
+    color: #2f4fe0;
+    border: 1px solid #c9d5ff;
+    background: #f5f8ff;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.personal-links a:hover {
+    border-color: #9fb4ff;
+    background: #eaf0ff;
+    color: #253fc0;
+}
+
+[data-theme="dark"] {
+    --bg: #0d111c;
+    --surface: #151b2a;
+    --surface-soft: #11182a;
+    --text: #e8edf8;
+    --muted: #b2bed8;
+    --line: #2a3651;
+    --primary: #86a7ff;
+    --primary-soft: #1f2c4f;
+    --success: #67d69f;
+    --shadow: 0 14px 36px rgba(3, 8, 20, 0.45);
+}
+
+[data-theme="dark"] body {
+    background: radial-gradient(circle at top, #18233d 0%, var(--bg) 60%);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: #1a253f;
+    color: #dce6ff;
+    border-color: #344569;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: #22325a;
+    border-color: #4a6298;
+}
+
+[data-theme="dark"] .section-nav a,
+[data-theme="dark"] .topic-btn,
+[data-theme="dark"] .analysis-panel,
+[data-theme="dark"] .wireframe-card,
+[data-theme="dark"] .best-practices article,
+[data-theme="dark"] .matrix-row,
+[data-theme="dark"] .card-head,
+[data-theme="dark"] .preview-card iframe {
+    background: #121b31;
+    color: var(--text);
+}
+
+[data-theme="dark"] .matrix-row.head {
+    background: #17233f;
+}
+
+[data-theme="dark"] .wireframe,
+[data-theme="dark"] .wf-block {
+    background: #111a30;
+    color: #d5def5;
+    border-color: #324061;
+}
+
+[data-theme="dark"] .badge {
+    background: #111a30;
+    color: #d0dcfa;
+    border-color: #2f3c5b;
+}
+
+[data-theme="dark"] .full-view-cta,
+[data-theme="dark"] .wireframe-note,
+[data-theme="dark"] .analysis-panel p,
+[data-theme="dark"] .best-practices p,
+[data-theme="dark"] .article-footer {
+    color: var(--muted);
+}
+
+[data-theme="dark"] .footer-title,
+[data-theme="dark"] .matrix-row span:nth-child(1),
+[data-theme="dark"] .matrix-row span:nth-child(2) {
+    color: var(--text);
+}
+
+[data-theme="dark"] .full-view-cta a,
+[data-theme="dark"] .personal-links a {
+    color: #bcd0ff;
+    border-color: #3d5280;
+    background: #1c2847;
+}
+
+[data-theme="dark"] .full-view-cta a:hover,
+[data-theme="dark"] .personal-links a:hover {
+    color: #e1eaff;
+    border-color: #5871a9;
+    background: #25365f;
+}
+
 @media (max-width: 980px) {
     .live-grid,
     .wireframe-grid,
@@ -354,6 +541,15 @@ h1 {
 }
 
 @media (max-width: 720px) {
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .theme-toggle {
+        position: static;
+        margin-top: 14px;
+    }
+
     .matrix-row {
         grid-template-columns: 1fr;
         gap: 4px;
