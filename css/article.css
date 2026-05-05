@@ -346,7 +346,7 @@ h1 {
 .analysis-panel ul {
     margin-top: 12px;
     padding-left: 20px;
-    color: #2a3954;
+    color: var(--text);
 }
 
 .analysis-panel li + li {
