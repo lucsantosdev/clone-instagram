@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de las 10 Heurísticas de Jakob Nielsen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/heuristics.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <button class="theme-toggle" type="button" aria-label="Activate dark mode" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 4.5A1.1 1.1 0 0 1 13.1 5.6v1.2a1.1 1.1 0 1 1-2.2 0V5.6A1.1 1.1 0 0 1 12 4.5Zm0 12.7a1.1 1.1 0 0 1 1.1 1.1v1.2a1.1 1.1 0 1 1-2.2 0v-1.2a1.1 1.1 0 0 1 1.1-1.1Zm7.5-5.2a1.1 1.1 0 0 1 0 2.2h-1.2a1.1 1.1 0 0 1 0-2.2h1.2Zm-13.8 0a1.1 1.1 0 0 1 0 2.2H4.5a1.1 1.1 0 0 1 0-2.2h1.2Zm10.2-4.8a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm-9 9a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm10.6 1.6a1.1 1.1 0 0 1-1.6 0l-.8-.8a1.1 1.1 0 1 1 1.6-1.6l.8.8a1.1 1.1 0 0 1 0 1.6Zm-9-9a1.1 1.1 0 0 1-1.6 0l-.8-.8A1.1 1.1 0 0 1 7.7 6.4l.8.8a1.1 1.1 0 0 1 0 1.6ZM12 8.1a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8Z"/>
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14.5 3.4a1 1 0 0 1 1.1 1.3 7.2 7.2 0 0 0 8.3 9.6 1 1 0 0 1 1.1 1.4A10.4 10.4 0 1 1 14 2.4a1 1 0 0 1 .5 1Zm-1.1 2.3a8.4 8.4 0 1 0 8.6 8.7 9.2 9.2 0 0 1-8.6-8.7Z"/>
+                </svg>
+                <span class="sr-only">Cambiar tema</span>
+            </button>
+            <p class="eyebrow">Material de estudio complementario</p>
+            <h1>Las 10 Heurísticas de Jakob Nielsen</h1>
+            <p>
+                Una guía concisa para revisar interfaces con un enfoque en la usabilidad. Utiliza esta lista en auditorías,
+                pruebas de prototipos y refinamiento de flujos antes del desarrollo final.
+            </p>
+            <nav class="language-nav" aria-label="Cambiar idioma de la página">
+                <a href="../../heuristicas-jakob-nielsen.html">PT</a>
+                <a href="../en/jakob-nielsen-heuristics.html">EN</a>
+                <a class="is-active" href="jakob-nielsen-heuristicas.html" aria-current="page">ES</a>
+            </nav>
+            <a class="back-link" href="index.html">Volver al artículo principal</a>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="intro-card">
+            <h2>Cómo usar esta guía</h2>
+            <p>
+                Para cada heurística, verifica si la interfaz comunica lo que está sucediendo, previene errores y respeta
+                el modelo mental del usuario. Marca los puntos de fricción y prioriza los ajustes que reduzcan el esfuerzo cognitivo.
+            </p>
+        </section>
+
+        <section class="heuristics-grid" aria-label="List of heuristics">
+            <article class="heuristic-card">
+                <h3>1. Visibilidad del estado del sistema</h3>
+                <p>Proporciona retroalimentación clara sobre la carga, el éxito, los errores y el progreso de las tareas.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>2. Coincidencia entre el sistema y el mundo real</h3>
+                <p>Utiliza un lenguaje familiar, iconos comprensibles y flujos alineados con el contexto del usuario.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>3. Control y libertad del usuario</h3>
+                <p>Permite deshacer, cancelar y retroceder acciones sin perder el progreso.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>4. Consistencia y estándares</h3>
+                <p>Mantén comportamientos predecibles, convenciones de nombres y componentes consistentes a lo largo de la experiencia.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>5. Prevención de errores</h3>
+                <p>Prevén errores con validaciones proactivas, límites de entrada y acciones de confirmación cuando sea necesario.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>6. Reconocimiento en lugar de recuerdo</h3>
+                <p>Reduce la carga cognitiva con opciones visibles, historial y pistas contextuales.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>7. Flexibilidad y eficiencia de uso</h3>
+                <p>Acomoda tanto a principiantes como a usuarios avanzados con atajos, autocompletado y rutas rápidas.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>8. Diseño estético y minimalista</h3>
+                <p>Elimina el ruido visual y resalta solo lo esencial para la tarea actual.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>9. Ayuda a los usuarios a reconocer y recuperarse de errores</h3>
+                <p>Los mensajes de error deben explicar la causa, el impacto y los pasos siguientes para la corrección.</p>
+            </article>
+            <article class="heuristic-card">
+                <h3>10. Ayuda y documentación</h3>
+                <p>Proporciona soporte fácilmente accesible con orientación clara y ejemplos listos para usar.</p>
+            </article>
+        </section>
+
+        <section class="resources">
+            <div class="resources-columns">
+                <div class="resources-column">
+                    <h2>Lecturas y referencias recomendadas</h2>
+                    <ul>
+                        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group - Diez heurísticas de usabilidad</a></li>
+                        <li><a href="https://www.nngroup.com/articles/heuristic-evaluation/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group - Cómo realizar una evaluación heurística</a></li>
+                        <li><a href="https://www.interaction-design.org/literature/topics/heuristic-evaluation" target="_blank" rel="noopener noreferrer">Interaction Design Foundation - Evaluación heurística</a></li>
+                        <li><a href="https://lawsofux.com/" target="_blank" rel="noopener noreferrer">Leyes de UX</a></li>
+                    </ul>
+                </div>
+
+                <div class="resources-column">
+                    <h2>Libros recomendados</h2>
+                    <ul>
+                        <li><strong>Ingeniería de la usabilidad</strong> - Jakob Nielsen</li>
+                        <li><strong>Diseñando interfaces</strong> - Jenifer Tidwell, Charles Brewer y Aynne Valencia</li>
+                        <li><strong>No me hagas pensar</strong> - Steve Krug</li>
+                        <li><strong>El diseño de los objetos cotidianos</strong> - Don Norman</li>
+                        <li><strong>Cirugía de cohetes hecha fácil</strong> - Steve Krug</li>
+                        <li><strong>100 cosas que todo diseñador necesita saber sobre las personas</strong> - Susan Weinschenk</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <p class="footer-title">Conéctate conmigo</p>
+        <nav class="personal-links" aria-label="Enlaces personales">
+            <a href="https://www.linkedin.com/in/lucsantosdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/lucsantosdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:lucsantosdev@gmail.com">E-mail</a>
+            <a href="https://ko-fi.com/lucsantosdev" target="_blank" rel="noopener noreferrer">Apóyame</a>
+        </nav>
+        <p>Artículo de estudio interactivo de UI/UX • Proyecto educativo comparando la página de inicio de sesión de <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-title">Instagram</a>.</p>
+    </footer>
+
+    <script src="../../js/heuristics.js"></script>
+</body>
+</html>

@@ -1,97 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia das 10 Heurísticas de Jakob Nielsen</title>
+    <title>Jakob Nielsen's 10 Heuristics Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/heuristics.css">
+    <link rel="stylesheet" href="../../css/heuristics.css">
 </head>
 <body>
     <header class="hero">
         <div class="hero-content">
-            <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+            <button class="theme-toggle" type="button" aria-label="Activate dark mode" aria-pressed="false">
                 <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path d="M12 4.5A1.1 1.1 0 0 1 13.1 5.6v1.2a1.1 1.1 0 1 1-2.2 0V5.6A1.1 1.1 0 0 1 12 4.5Zm0 12.7a1.1 1.1 0 0 1 1.1 1.1v1.2a1.1 1.1 0 1 1-2.2 0v-1.2a1.1 1.1 0 0 1 1.1-1.1Zm7.5-5.2a1.1 1.1 0 0 1 0 2.2h-1.2a1.1 1.1 0 0 1 0-2.2h1.2Zm-13.8 0a1.1 1.1 0 0 1 0 2.2H4.5a1.1 1.1 0 0 1 0-2.2h1.2Zm10.2-4.8a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm-9 9a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm10.6 1.6a1.1 1.1 0 0 1-1.6 0l-.8-.8a1.1 1.1 0 1 1 1.6-1.6l.8.8a1.1 1.1 0 0 1 0 1.6Zm-9-9a1.1 1.1 0 0 1-1.6 0l-.8-.8A1.1 1.1 0 0 1 7.7 6.4l.8.8a1.1 1.1 0 0 1 0 1.6ZM12 8.1a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8Z"/>
                 </svg>
                 <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path d="M14.5 3.4a1 1 0 0 1 1.1 1.3 7.2 7.2 0 0 0 8.3 9.6 1 1 0 0 1 1.1 1.4A10.4 10.4 0 1 1 14 2.4a1 1 0 0 1 .5 1Zm-1.1 2.3a8.4 8.4 0 1 0 8.6 8.7 9.2 9.2 0 0 1-8.6-8.7Z"/>
                 </svg>
-                <span class="sr-only">Alternar tema</span>
+                <span class="sr-only">Toggle theme</span>
             </button>
-            <p class="eyebrow">Material complementar de estudo</p>
-            <h1>10 Heurísticas de Jakob Nielsen</h1>
+            <p class="eyebrow">Supplementary study material</p>
+            <h1>Jakob Nielsen's 10 Heuristics</h1>
             <p>
-                Um guia resumido para revisar interfaces com foco em usabilidade. Use esta lista em auditorias,
-                testes de protótipo e refinamento de fluxos antes do desenvolvimento final.
+                A concise guide to reviewing interfaces with a focus on usability. Use this list in audits,
+                prototype testing, and flow refinement before final development.
             </p>
-            <nav class="language-nav" aria-label="Alternar idioma da página">
-                <a class="is-active" href="heuristicas-jakob-nielsen.html" aria-current="page">PT</a>
-                <a href="lang/en/jakob-nielsen-heuristics.html">EN</a>
-                <a href="lang/es/jakob-nielsen-heuristicas.html">ES</a>
+            <nav class="language-nav" aria-label="Switch page language">
+                <a href="../../heuristicas-jakob-nielsen.html">PT</a>
+                <a class="is-active" href="jakob-nielsen-heuristics.html" aria-current="page">EN</a>
+                <a href="../es/jakob-nielsen-heuristicas.html">ES</a>
             </nav>
-            <a class="back-link" href="index.html">Voltar para o artigo principal</a>
+            <a class="back-link" href="index.html">Back to the main article</a>
         </div>
     </header>
 
     <main class="page-content">
         <section class="intro-card">
-            <h2>Como usar este guia</h2>
+            <h2>How to use this guide</h2>
             <p>
-                Para cada heurística, valide se a interface comunica o que está acontecendo, evita erros e respeita
-                o modelo mental do usuário. Marque pontos de atrito e priorize ajustes que reduzam esforço cognitivo.
+                For each heuristic, check if the interface communicates what is happening, prevents errors, and respects
+                the user's mental model. Mark friction points and prioritize adjustments that reduce cognitive effort.
             </p>
         </section>
 
-        <section class="heuristics-grid" aria-label="Lista das heurísticas">
+        <section class="heuristics-grid" aria-label="List of heuristics">
             <article class="heuristic-card">
-                <h3>1. Visibilidade do status do sistema</h3>
-                <p>Mostre feedback claro sobre carregamento, sucesso, erro e andamento de tarefas.</p>
+                <h3>1. Visibility of system status</h3>
+                <p>Provide clear feedback on loading, success, error, and task progress.</p>
             </article>
             <article class="heuristic-card">
-                <h3>2. Correspondência com o mundo real</h3>
-                <p>Use linguagem familiar, ícones compreensíveis e fluxos alinhados ao contexto do usuário.</p>
+                <h3>2. Match between system and the real world</h3>
+                <p>Use familiar language, understandable icons, and flows aligned with the user's context.</p>
             </article>
             <article class="heuristic-card">
-                <h3>3. Controle e liberdade do usuário</h3>
-                <p>Permita desfazer, cancelar e voltar sem perda de progresso.</p>
+                <h3>3. User control and freedom</h3>
+                <p>Allow undo, cancel, and back actions without losing progress.</p>
             </article>
             <article class="heuristic-card">
-                <h3>4. Consistência e padrões</h3>
-                <p>Mantenha comportamentos, nomenclaturas e componentes previsíveis em toda a experiência.</p>
+                <h3>4. Consistency and standards</h3>
+                <p>Maintain predictable behaviors, naming conventions, and components throughout the experience.</p>
             </article>
             <article class="heuristic-card">
-                <h3>5. Prevenção de erros</h3>
-                <p>Evite falhas com validações antecipadas, limites de entrada e ações confirmatórias quando necessário.</p>
+                <h3>5. Error prevention</h3>
+                <p>Prevent errors with proactive validations, input limits, and confirmation actions when necessary.</p>
             </article>
             <article class="heuristic-card">
-                <h3>6. Reconhecimento em vez de memorização</h3>
-                <p>Reduza carga mental com opções visíveis, histórico e pistas contextuais.</p>
+                <h3>6. Recognition rather than recall</h3>
+                <p>Reduce cognitive load with visible options, history, and contextual cues.</p>
             </article>
             <article class="heuristic-card">
-                <h3>7. Flexibilidade e eficiência de uso</h3>
-                <p>Atenda iniciantes e avançados com atalhos, autofill e caminhos rápidos.</p>
+                <h3>7. Flexibility and efficiency of use</h3>
+                <p>Accommodate both beginners and advanced users with shortcuts, autofill, and quick paths.</p>
             </article>
             <article class="heuristic-card">
-                <h3>8. Design estético e minimalista</h3>
-                <p>Remova ruído visual e destaque somente o essencial para a tarefa atual.</p>
+                <h3>8. Aesthetic and minimalist design</h3>
+                <p>Remove visual noise and highlight only what is essential for the current task.</p>
             </article>
             <article class="heuristic-card">
-                <h3>9. Ajude a reconhecer e recuperar erros</h3>
-                <p>Mensagens de erro devem explicar causa, impacto e próximo passo para correção.</p>
+                <h3>9. Help users recognize and recover from errors</h3>
+                <p>Error messages should explain the cause, impact, and next steps for correction.</p>
             </article>
             <article class="heuristic-card">
-                <h3>10. Ajuda e documentação</h3>
-                <p>Disponibilize suporte de fácil acesso com orientações objetivas e exemplos prontos.</p>
+                <h3>10. Help and documentation</h3>
+                <p>Provide easily accessible support with clear guidance and ready-to-use examples.</p>
             </article>
         </section>
 
         <section class="resources">
             <div class="resources-columns">
                 <div class="resources-column">
-                    <h2>Leituras e referências recomendadas</h2>
+                    <h2>Recommended Readings and References</h2>
                     <ul>
                         <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group - Ten Usability Heuristics</a></li>
                         <li><a href="https://www.nngroup.com/articles/heuristic-evaluation/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group - How to Conduct a Heuristic Evaluation</a></li>
@@ -101,10 +101,10 @@
                 </div>
 
                 <div class="resources-column">
-                    <h2>Livros recomendados</h2>
+                    <h2>Recommended Books</h2>
                     <ul>
                         <li><strong>Usability Engineering</strong> - Jakob Nielsen</li>
-                        <li><strong>Designing Interfaces</strong> - Jenifer Tidwell, Charles Brewer e Aynne Valencia</li>
+                        <li><strong>Designing Interfaces</strong> - Jenifer Tidwell, Charles Brewer and Aynne Valencia</li>
                         <li><strong>Don't Make Me Think</strong> - Steve Krug</li>
                         <li><strong>The Design of Everyday Things</strong> - Don Norman</li>
                         <li><strong>Rocket Surgery Made Easy</strong> - Steve Krug</li>
@@ -116,16 +116,16 @@
     </main>
 
     <footer class="article-footer">
-        <p class="footer-title">Conecte-se Comigo</p>
-        <nav class="personal-links" aria-label="Links pessoais">
+        <p class="footer-title">Connect with Me</p>
+        <nav class="personal-links" aria-label="Personal links">
             <a href="https://www.linkedin.com/in/lucsantosdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/lucsantosdev" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="mailto:lucsantosdev@gmail.com">E-mail</a>
-            <a href="https://ko-fi.com/lucsantosdev" target="_blank" rel="noopener noreferrer">Apoie-me</a>
+            <a href="https://ko-fi.com/lucsantosdev" target="_blank" rel="noopener noreferrer">Support Me</a>
         </nav>
-        <p>Artigo interativo de estudo UI/UX • Projeto educacional comparativo da página de login do <a class="footer-title" href="https://instagram.com" target="_blank">Instagram</a>.</p>
+        <p>Interactive UI/UX study article • Educational project comparing the Instagram login page.</p>
     </footer>
 
-    <script src="js/heuristics.js"></script>
+    <script src="../../js/heuristics.js"></script>
 </body>
 </html>

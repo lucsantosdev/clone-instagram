@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio UI/UX - Inicio de sesión de Instagram (Antiguo vs Nuevo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Estudio de Caso • Meta / Instagram</p>
+            <h1>Comparación UI/UX: Página de Inicio de Sesión de Instagram (Antiguo vs Nuevo)</h1>
+            <p class="subtitle">
+                Un artículo interactivo para analizar decisiones de interfaz, jerarquía visual, legibilidad,
+                microinteracciones y usabilidad en el rediseño de la experiencia de inicio de sesión de Instagram.
+            </p>
+            <nav class="language-nav" aria-label="Cambiar idioma de la página">
+                <a href="../../index.html">PT</a>
+                <a href="../en/index.html">EN</a>
+                <a class="is-active" href="index.html" aria-current="page">ES</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 4.5A1.1 1.1 0 0 1 13.1 5.6v1.2a1.1 1.1 0 1 1-2.2 0V5.6A1.1 1.1 0 0 1 12 4.5Zm0 12.7a1.1 1.1 0 0 1 1.1 1.1v1.2a1.1 1.1 0 1 1-2.2 0v-1.2a1.1 1.1 0 0 1 1.1-1.1Zm7.5-5.2a1.1 1.1 0 0 1 0 2.2h-1.2a1.1 1.1 0 0 1 0-2.2h1.2Zm-13.8 0a1.1 1.1 0 0 1 0 2.2H4.5a1.1 1.1 0 0 1 0-2.2h1.2Zm10.2-4.8a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm-9 9a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm10.6 1.6a1.1 1.1 0 0 1-1.6 0l-.8-.8a1.1 1.1 0 1 1 1.6-1.6l.8.8a1.1 1.1 0 0 1 0 1.6Zm-9-9a1.1 1.1 0 0 1-1.6 0l-.8-.8A1.1 1.1 0 0 1 7.7 6.4l.8.8a1.1 1.1 0 0 1 0 1.6ZM12 8.1a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8Z"/>
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14.5 3.4a1 1 0 0 1 1.1 1.3 7.2 7.2 0 0 0 8.3 9.6 1 1 0 0 1 1.1 1.4A10.4 10.4 0 1 1 14 2.4a1 1 0 0 1 .5 1Zm-1.1 2.3a8.4 8.4 0 1 0 8.6 8.7 9.2 9.2 0 0 1-8.6-8.7Z"/>
+                </svg>
+                <span class="sr-only">Cambiar tema</span>
+            </button>
+            <nav class="section-nav" aria-label="Article navigation">
+                <a href="#comparativo">Comparación</a>
+                <a href="#wireframes">Wireframes</a>
+                <a href="#analise">Análisis</a>
+                <a href="#matriz">Matriz UX</a>
+                <a href="#boas-praticas">Buenas Prácticas</a>
+                <a href="#recursos-ux">Recursos UI/UX</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-layout">
+        <section class="section" id="comparativo">
+            <div class="section-title-wrap">
+                <h2>Comparación Visual en Tiempo Real</h2>
+                <p>Vea ambas implementaciones lado a lado y compare la estructura, la escala tipográfica y la densidad de información.</p>
+            </div>
+
+            <div class="live-grid">
+                <article class="preview-card old" aria-labelledby="old-title">
+                    <div class="card-head">
+                        <h3 id="old-title">Versión Antigua</h3>
+                        <span class="badge">Base Histórica</span>
+                    </div>
+                    <iframe
+                        src="../../old-version/index.html"
+                        title="Vista previa de la versión antigua de la página de inicio de sesión"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+
+                <article class="preview-card new" aria-labelledby="new-title">
+                    <div class="card-head">
+                        <h3 id="new-title">Nueva Versión</h3>
+                        <span class="badge highlight">Versión Evolucionada</span>
+                    </div>
+                    <iframe
+                        src="../../new-version/index.html"
+                        title="Vista previa de la nueva versión de la página de inicio de sesión"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+            </div>
+
+            <p class="full-view-cta">
+                ¿Quieres ver la experiencia completa? Haz clic en la versión deseada: <a href="old-version/index.html" target="_blank" rel="noopener noreferrer">Versión Antigua</a> X <a href="new-version/index.html" target="_blank" rel="noopener noreferrer">Nueva Versión</a>.
+            </p>
+
+        </section>
+
+        <section class="section" id="wireframes">
+            <div class="section-title-wrap">
+                <h2>Wireframes Comparativos</h2>
+                <p>Mapeo estructural de los bloques principales para facilitar la lectura del diseño y las decisiones de composición.</p>
+            </div>
+
+            <div class="wireframe-grid">
+                <article class="wireframe-card">
+                    <h3>Wireframe • Versión Antigua</h3>
+                    <div class="wireframe old">
+                        <div class="wf-block wf-hero">Área Visual</div>
+                        <div class="wf-block wf-form">Formulario</div>
+                        <div class="wf-block wf-actions">Acciones Secundarias</div>
+                        <div class="wf-block wf-footer">Enlaces Institucionales</div>
+                    </div>
+                    <p class="wireframe-note">Composición más compacta con un enfoque en la finalización rápida.</p>
+                </article>
+
+                <article class="wireframe-card">
+                    <h3>Wireframe • Nueva Versión</h3>
+                    <div class="wireframe new">
+                        <div class="wf-block wf-brand">Marca Ampliada</div>
+                        <div class="wf-block wf-hero">Mensaje Principal</div>
+                        <div class="wf-block wf-form">Formulario con mayor comodidad visual</div>
+                        <div class="wf-block wf-actions">Acciones con jerarquía más evidente</div>
+                        <div class="wf-block wf-footer">Pie de página informativo</div>
+                    </div>
+                    <p class="wireframe-note">Estructura con más espacio y narrativa visual más clara.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="analysis">
+            <div class="section-title-wrap">
+                <h2>Análisis en Profundidad de Conceptos UI/UX</h2>
+                <p>Selecciona un tema para ver el diagnóstico comparativo y el impacto percibido en la experiencia del usuario.</p>
+            </div>
+
+            <div class="analysis-controls" role="tablist" aria-label="Temas de Análisis">
+                <button class="topic-btn active" data-topic="hierarquia" role="tab" aria-selected="true">Jerarquía Visual</button>
+                <button class="topic-btn" data-topic="legibilidade" role="tab" aria-selected="false">Legibilidad</button>
+                <button class="topic-btn" data-topic="acoes" role="tab" aria-selected="false">Acciones y Retroalimentación</button>
+                <button class="topic-btn" data-topic="consistencia" role="tab" aria-selected="false">Consistencia</button>
+            </div>
+
+            <div class="analysis-panels">
+                <article class="analysis-panel active" data-topic="hierarquia" role="tabpanel">
+                    <h3>Jerarquía Visual</h3>
+                    <p>
+                        La nueva versión aumenta el contraste entre los niveles de información: título, formulario y acciones secundarias.
+                        Esto reduce la carga cognitiva inicial y mejora la escaneabilidad, especialmente para los usuarios recurrentes.
+                    </p>
+                    <ul>
+                        <li>Mejor separación entre el contenido de la marca y la tarea principal (inicio de sesión).</li>
+                        <li>Mayor previsibilidad en el orden de lectura (patrón F/Z).</li>
+                        <li>Uso más claro de los pesos tipográficos para guiar la atención.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="legibilidade" role="tabpanel" hidden>
+                    <h3>Legibilidad y Comodidad Visual</h3>
+                    <p>
+                        El rediseño prioriza áreas táctiles más grandes, espaciado generoso y contraste suave, equilibrando
+                        accesibilidad con la estética de la marca.
+                    </p>
+                    <ul>
+                        <li>Campos más grandes con mejor área clicable.</li>
+                        <li>Altura de línea y espaciado entre bloques que favorecen la lectura continua.</li>
+                        <li>Pie de página con mejor organización para la navegación institucional.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="acoes" role="tabpanel" hidden>
+                    <h3>Acciones Primarias y Retroalimentación</h3>
+                    <p>
+                        La acción primaria ("Iniciar sesión") se destaca por color y tamaño, mientras que las acciones alternativas tienen un estilo secundario consistente, facilitando decisiones rápidas.
+                    </p>
+                    <ul>
+                        <li>CTA primaria visualmente dominante.</li>
+                        <li>Acciones de soporte posicionadas después de la tarea principal.</li>
+                        <li>Patrón de botones predecible para reducir errores de clic.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="consistencia" role="tabpanel" hidden>
+                    <h3>Consistencia y Sistema de Interfaz</h3>
+                    <p>
+                        La nueva versión muestra una mayor consistencia en radio, espaciado y componentes, acercando la implementación
+                        a un sistema de diseño sostenible para la evolución del producto.
+                    </p>
+                    <ul>
+                        <li>Escalas tipográficas más coherentes entre secciones.</li>
+                        <li>Ritmo visual uniforme en campos y botones.</li>
+                        <li>Mayor adaptación responsiva sin romper el diseño.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="matrix">
+            <div class="section-title-wrap">
+                <h2>Matriz Comparativa de Experiencia</h2>
+                <p>Evaluación cualitativa de criterios de UI/UX para guiar decisiones de evolución de la interfaz.</p>
+            </div>
+
+            <div class="matrix">
+                <div class="matrix-row head">
+                    <span>Criterio</span>
+                    <span>Versión Anterior</span>
+                    <span>Nueva Versión</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Claridad de la Tarea</span>
+                    <span>Bueno</span>
+                    <span>Excelente</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Jerarquía Visual</span>
+                    <span>Media</span>
+                    <span>Alta</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Accesibilidad de Lectura</span>
+                    <span>Media</span>
+                    <span>Alta</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Escalabilidad del Diseño</span>
+                    <span>Media</span>
+                    <span>Alta</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="best-practices">
+            <div class="section-title-wrap">
+                <h2>Buenas Prácticas Observadas</h2>
+                <p>Directrices útiles para aplicar en productos digitales con un enfoque en conversión y claridad.</p>
+            </div>
+
+            <div class="best-practices">
+                <article>
+                    <h3>1. Priorizar una acción principal</h3>
+                    <p>El CTA principal debe tener mayor contraste y tamaño que otros elementos interactivos.</p>
+                </article>
+                <article>
+                    <h3>2. Trabajar la densidad con intención</h3>
+                    <p>El espaciado consistente mejora la legibilidad y reduce el esfuerzo percibido para completar tareas.</p>
+                </article>
+                <article>
+                    <h3>3. Mantener la consistencia visual</h3>
+                    <p>El radio, la altura de los componentes y la tipografía estandarizados aumentan la confianza y la previsibilidad.</p>
+                </article>
+                <article>
+                    <h3>4. Asegurar una verdadera capacidad de respuesta</h3>
+                    <p>Los diseños fluidos y los puntos de interrupción estratégicos preservan la experiencia en diferentes dispositivos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="ux-resources">
+            <div class="section-title-wrap">
+                <h2>Dónde encontrar más conocimiento en UI/UX</h2>
+                <p>Selección de fuentes confiables para evolucionar tu repertorio en diseño de interfaces, investigación de usuarios y evaluación heurística.</p>
+            </div>
+
+            <div class="resource-groups">
+                <article class="resource-card">
+                    <h3>Plataformas y Enlaces de Referencia</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group: 10 Heurísticas de Usabilidad</a></li>
+                        <li><a href="https://www.interaction-design.org/literature/topics/ux-design" target="_blank" rel="noopener noreferrer">Interaction Design Foundation: Diseño UX</a></li>
+                        <li><a href="https://lawsofux.com/" target="_blank" rel="noopener noreferrer">Leyes de UX</a></li>
+                        <li><a href="https://www.usability.gov/" target="_blank" rel="noopener noreferrer">Usability.gov</a></li>
+                    </ul>
+                </article>
+
+                <article class="resource-card">
+                    <h3>Libros Recomendados</h3>
+                    <ul class="resource-list books">
+                        <li><strong>No me hagas pensar</strong> - Steve Krug</li>
+                        <li><strong>El diseño de los objetos cotidianos</strong> - Don Norman</li>
+                        <li><strong>Lean UX</strong> - Jeff Gothelf y Josh Seiden</li>
+                        <li><strong>Refactoring UI</strong> - Adam Wathan y Steve Schoger</li>
+                    </ul>
+                </article>
+            </div>
+
+            <article class="heuristics-callout">
+                <h3>10 Heurísticas de Jakob Nielsen</h3>
+                <p>
+                    Las heurísticas ayudan a auditar interfaces con un enfoque en claridad, retroalimentación, prevención de errores y consistencia.
+                    He creado una página complementaria con un resumen práctico de las 10 heurísticas y ejemplos de aplicación en productos digitales.
+                </p>
+                <a class="heuristics-link" href="jakob-nielsen-heuristicas.html" target="_blank" rel="noopener noreferrer">Explora la guía completa de heurísticas</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <p class="footer-title">Conéctate conmigo</p>
+        <nav class="personal-links" aria-label="Enlaces personales">
+            <a href="https://www.linkedin.com/in/lucsantosdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/lucsantosdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:lucsantosdev@gmail.com">Correo</a>
+            <a href="https://ko-fi.com/lucsantosdev" target="_blank" rel="noopener noreferrer">Apóyame</a>
+        </nav>
+        <p>Artículo de estudio interactivo de UI/UX • Proyecto educativo comparando la página de inicio de sesión de <a href="http://instagram.com" target="_blank" class="footer-title" rel="noopener noreferrer">Instagram</a>.</p>
+    </footer>
+
+    <script src="../../js/article.js"></script>
+</body>
+</html>

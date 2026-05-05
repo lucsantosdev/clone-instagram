@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Study - Instagram Login (Old vs New)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Case Study • Meta / Instagram</p>
+            <h1>UI/UX Comparison: Instagram Login Page (Old vs New)</h1>
+            <p class="subtitle">
+                An interactive article to analyze interface decisions, visual hierarchy, readability,
+                microinteractions, and usability in the redesign of Instagram's login experience.
+            </p>
+            <nav class="language-nav" aria-label="Switch page language">
+                <a href="../../index.html">PT</a>
+                <a class="is-active" href="index.html" aria-current="page">EN</a>
+                <a href="../es/index.html">ES</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Activate dark mode" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 4.5A1.1 1.1 0 0 1 13.1 5.6v1.2a1.1 1.1 0 1 1-2.2 0V5.6A1.1 1.1 0 0 1 12 4.5Zm0 12.7a1.1 1.1 0 0 1 1.1 1.1v1.2a1.1 1.1 0 1 1-2.2 0v-1.2a1.1 1.1 0 0 1 1.1-1.1Zm7.5-5.2a1.1 1.1 0 0 1 0 2.2h-1.2a1.1 1.1 0 0 1 0-2.2h1.2Zm-13.8 0a1.1 1.1 0 0 1 0 2.2H4.5a1.1 1.1 0 0 1 0-2.2h1.2Zm10.2-4.8a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm-9 9a1.1 1.1 0 0 1 1.6 0l.8.8a1.1 1.1 0 1 1-1.6 1.6l-.8-.8a1.1 1.1 0 0 1 0-1.6Zm10.6 1.6a1.1 1.1 0 0 1-1.6 0l-.8-.8a1.1 1.1 0 1 1 1.6-1.6l.8.8a1.1 1.1 0 0 1 0 1.6Zm-9-9a1.1 1.1 0 0 1-1.6 0l-.8-.8A1.1 1.1 0 0 1 7.7 6.4l.8.8a1.1 1.1 0 0 1 0 1.6ZM12 8.1a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8Z"/>
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14.5 3.4a1 1 0 0 1 1.1 1.3 7.2 7.2 0 0 0 8.3 9.6 1 1 0 0 1 1.1 1.4A10.4 10.4 0 1 1 14 2.4a1 1 0 0 1 .5 1Zm-1.1 2.3a8.4 8.4 0 1 0 8.6 8.7 9.2 9.2 0 0 1-8.6-8.7Z"/>
+                </svg>
+                <span class="sr-only">Toggle theme</span>
+            </button>
+            <nav class="section-nav" aria-label="Article navigation">
+                <a href="#comparativo">Comparison</a>
+                <a href="#wireframes">Wireframes</a>
+                <a href="#analise">Analysis</a>
+                <a href="#matriz">UX Matrix</a>
+                <a href="#boas-praticas">Best Practices</a>
+                <a href="#recursos-ux">UI/UX Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-layout">
+        <section class="section" id="comparativo">
+            <div class="section-title-wrap">
+                <h2>Real-time Visual Comparison</h2>
+                <p>View both implementations side by side and compare structure, typographic scale, and information density.</p>
+            </div>
+
+            <div class="live-grid">
+                <article class="preview-card old" aria-labelledby="old-title">
+                    <div class="card-head">
+                        <h3 id="old-title">Old Version</h3>
+                        <span class="badge">Historical Base</span>
+                    </div>
+                    <iframe
+                        src="../../old-version/index.html"
+                        title="Preview of the old version of the login page"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+
+                <article class="preview-card new" aria-labelledby="new-title">
+                    <div class="card-head">
+                        <h3 id="new-title">New Version</h3>
+                        <span class="badge highlight">Evolved Version</span>
+                    </div>
+                    <iframe
+                        src="../../new-version/index.html"
+                        title="Preview of the new version of the login page"
+                        loading="lazy"
+                    ></iframe>
+                </article>
+            </div>
+
+            <p class="full-view-cta">
+                Want to see the full experience? Click on the desired version: <a href="old-version/index.html" target="_blank" rel="noopener noreferrer">Old Version</a> X <a href="new-version/index.html" target="_blank" rel="noopener noreferrer">New Version</a>.
+            </p>
+
+        </section>
+
+        <section class="section" id="wireframes">
+            <div class="section-title-wrap">
+                <h2>Comparative Wireframes</h2>
+                <p>Structural mapping of the main blocks to facilitate layout reading and composition decisions.</p>
+            </div>
+
+            <div class="wireframe-grid">
+                <article class="wireframe-card">
+                    <h3>Wireframe • Old Version</h3>
+                    <div class="wireframe old">
+                        <div class="wf-block wf-hero">Visual Area</div>
+                        <div class="wf-block wf-form">Form</div>
+                        <div class="wf-block wf-actions">Secondary Actions</div>
+                        <div class="wf-block wf-footer">Institutional Links</div>
+                    </div>
+                    <p class="wireframe-note">More compact composition with a focus on quick completion.</p>
+                </article>
+
+                <article class="wireframe-card">
+                    <h3>Wireframe • New Version</h3>
+                    <div class="wireframe new">
+                        <div class="wf-block wf-brand">Expanded Branding</div>
+                        <div class="wf-block wf-hero">Main Message</div>
+                        <div class="wf-block wf-form">Form with greater visual comfort</div>
+                        <div class="wf-block wf-actions">Actions with more evident hierarchy</div>
+                        <div class="wf-block wf-footer">Informational Footer</div>
+                    </div>
+                    <p class="wireframe-note">Structure with more breathing space and clearer visual storytelling.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="analysis">
+            <div class="section-title-wrap">
+                <h2>In-depth UI/UX Concept Analysis</h2>
+                <p>Select a topic to see the comparative diagnosis and the perceived impact on the user experience.</p>
+            </div>
+
+            <div class="analysis-controls" role="tablist" aria-label="Analysis Topics">
+                <button class="topic-btn active" data-topic="hierarquia" role="tab" aria-selected="true">Visual Hierarchy</button>
+                <button class="topic-btn" data-topic="legibilidade" role="tab" aria-selected="false">Legibility</button>
+                <button class="topic-btn" data-topic="acoes" role="tab" aria-selected="false">Actions and Feedback</button>
+                <button class="topic-btn" data-topic="consistencia" role="tab" aria-selected="false">Consistency</button>
+            </div>
+
+            <div class="analysis-panels">
+                <article class="analysis-panel active" data-topic="hierarquia" role="tabpanel">
+                    <h3>Visual Hierarchy</h3>
+                    <p>
+                        The new version increases the contrast between information levels: title, form, and secondary actions.
+                        This reduces initial cognitive load and improves scanability, especially for returning users.
+                    </p>
+                    <ul>
+                        <li>Better separation between brand content and main task (login).</li>
+                        <li>Greater predictability in reading order (F/Z pattern).</li>
+                        <li>Clearer use of typographic weights to guide attention.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="legibilidade" role="tabpanel" hidden>
+                    <h3>Legibility and Visual Comfort</h3>
+                    <p>
+                        The redesign prioritizes larger touch areas, generous spacing, and soft contrast, balancing
+                        accessibility with brand aesthetics.
+                    </p>
+                    <ul>
+                        <li>Taller fields with better clickable area.</li>
+                        <li>Line-height and spacing between blocks favor continuous reading.</li>
+                        <li>Footer with better organization for institutional navigation.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="acoes" role="tabpanel" hidden>
+                    <h3>Primary Actions and Feedback</h3>
+                    <p>
+                        The primary action ("Login") is highlighted by color and size, while alternative actions have a consistent
+                        secondary style, facilitating quick decisions.
+                    </p>
+                    <ul>
+                        <li>Visually dominant primary CTA.</li>
+                        <li>Support actions positioned after the main task.</li>
+                        <li>Predictable button pattern to reduce click errors.</li>
+                    </ul>
+                </article>
+
+                <article class="analysis-panel" data-topic="consistencia" role="tabpanel" hidden>
+                    <h3>Consistency and Interface System</h3>
+                    <p>
+                        The new version shows greater consistency in radius, spacing, and components, bringing the implementation
+                        closer to a sustainable design system for product evolution.
+                    </p>
+                    <ul>
+                        <li>More coherent typographic scales across sections.</li>
+                        <li>Uniform visual rhythm in fields and buttons.</li>
+                        <li>Greater responsive adaptation without layout breakage.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="matrix">
+            <div class="section-title-wrap">
+                <h2>Comparative Experience Matrix</h2>
+                <p>Qualitative assessment of UI/UX criteria to guide interface evolution decisions.</p>
+            </div>
+
+            <div class="matrix">
+                <div class="matrix-row head">
+                    <span>Criterion</span>
+                    <span>Old Version</span>
+                    <span>New Version</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Task Clarity</span>
+                    <span>Good</span>
+                    <span>Excellent</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Visual Hierarchy</span>
+                    <span>Medium</span>
+                    <span>High</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Reading Accessibility</span>
+                    <span>Medium</span>
+                    <span>High</span>
+                </div>
+                <div class="matrix-row">
+                    <span>Design Scalability</span>
+                    <span>Medium</span>
+                    <span>High</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="best-practices">
+            <div class="section-title-wrap">
+                <h2>Observed Best Practices</h2>
+                <p>Useful guidelines for applying in digital products with a focus on conversion and clarity.</p>
+            </div>
+
+            <div class="best-practices">
+                <article>
+                    <h3>1. Prioritize a primary action</h3>
+                    <p>The primary CTA should have higher contrast and scale than other interactive elements.</p>
+                </article>
+                <article>
+                    <h3>2. Work density with intention</h3>
+                    <p>Consistent spacing improves readability and reduces the perceived effort to complete tasks.</p>
+                </article>
+                <article>
+                    <h3>3. Maintain visual consistency</h3>
+                    <p>Standardized radius, component height, and typography increase trust and predictability.</p>
+                </article>
+                <article>
+                    <h3>4. Ensure real responsiveness</h3>
+                    <p>Fluid layouts and strategic breakpoints preserve the experience across different devices.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="ux-resources">
+            <div class="section-title-wrap">
+                <h2>Where to find more knowledge in UI/UX</h2>
+                <p>Selection of reliable sources to evolve your repertoire in interface design, user research, and heuristic evaluation.</p>
+            </div>
+
+            <div class="resource-groups">
+                <article class="resource-card">
+                    <h3>Reference Platforms and Links</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group: 10 Usability Heuristics</a></li>
+                        <li><a href="https://www.interaction-design.org/literature/topics/ux-design" target="_blank" rel="noopener noreferrer">Interaction Design Foundation: UX Design</a></li>
+                        <li><a href="https://lawsofux.com/" target="_blank" rel="noopener noreferrer">Laws of UX</a></li>
+                        <li><a href="https://www.usability.gov/" target="_blank" rel="noopener noreferrer">Usability.gov</a></li>
+                    </ul>
+                </article>
+
+                <article class="resource-card">
+                    <h3>Recommended Books</h3>
+                    <ul class="resource-list books">
+                        <li><strong>Don't Make Me Think</strong> - Steve Krug</li>
+                        <li><strong>The Design of Everyday Things</strong> - Don Norman</li>
+                        <li><strong>Lean UX</strong> - Jeff Gothelf and Josh Seiden</li>
+                        <li><strong>Refactoring UI</strong> - Adam Wathan and Steve Schoger</li>
+                    </ul>
+                </article>
+            </div>
+
+            <article class="heuristics-callout">
+                <h3>10 Jakob Nielsen Heuristics</h3>
+                <p>
+                    The heuristics help audit interfaces with a focus on clarity, feedback, error prevention, and consistency.
+                    I created a complementary page with a practical summary of the 10 heuristics and examples of application in digital products.
+                </p>
+                <a class="heuristics-link" href="jakob-nielsen-heuristics.html" target="_blank" rel="noopener noreferrer">Explore the complete heuristics guide</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <p class="footer-title">Connect with Me</p>
+        <nav class="personal-links" aria-label="Personal links">
+            <a href="https://www.linkedin.com/in/lucsantosdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/lucsantosdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:lucsantosdev@gmail.com">Email</a>
+            <a href="https://ko-fi.com/lucsantosdev" target="_blank" rel="noopener noreferrer">Support Me</a>
+        </nav>
+        <p>Interactive UI/UX study article • Educational project comparing the <a href="http://instagram.com" target="_blank" class="footer-title" rel="noopener noreferrer">Instagram</a> login page.</p>
+    </footer>
+
+    <script src="../../js/article.js"></script>
+</body>
+</html>
