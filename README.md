@@ -2,7 +2,7 @@
 
 > Projeto educacional para estudar interface, experiência do usuário e evolução visual da tela de login do Instagram.
 
-Idioma: [Português](README.md) | [English](lang/en/README.md) | [Español](lang/es/README.md)
+🌍 **Idioma/Language:** [Português](README.md) | [English](lang/en/README.md) | [Español](lang/es/README.md)
 
 ## ✨ Visao Geral
 
@@ -69,10 +69,12 @@ Criar um ambiente pratico para:
 ## 🌐 Conecte-se Comigo
 
 Acompanhe minha jornada e outros projetos em:
-- **LinkedIn:** [lucsantosdev](https://www.linkedin.com/in/lucsantosdev)
-- **GitHub:** [lucsantosdev](https://github.com/lucsantosdev)
-- **Email:** [lucsantosdev@gmail.com](mailto:lucsantosdev@gmail.com)
-- **Apoie-me:** [Ko-Fi](https://ko-fi.com/lucsantosdev)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-lucsantosdev-blue?logo=linkedin)](https://www.linkedin.com/in/lucsantosdev)
+[![GitHub](https://img.shields.io/badge/GitHub-lucsantosdev-181717?logo=github)](https://github.com/lucsantosdev)
+[![Email](https://img.shields.io/badge/Gmail-lucsantosdev@gmail.com-181717?logo=gmail)](mailto:lucsantosdev@gmail.com)
+[![YouTube](https://img.shields.io/badge/YouTube-lucsantosdev-FF0000?logo=youtube&logoColor=white)](https://youtube.com/@lucsantosdev)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?logo=ko-fi)](https://ko-fi.com/lucsantosdev)
 
 ---
 

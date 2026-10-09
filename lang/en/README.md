@@ -69,10 +69,12 @@ Create a practical environment to:
 ## 🌐 Connect With Me
 
 Follow my journey and other projects at:
-- **LinkedIn:** [lucsantosdev](https://www.linkedin.com/in/lucsantosdev)
-- **GitHub:** [lucsantosdev](https://github.com/lucsantosdev)
-- **Email:** [lucsantosdev@gmail.com](mailto:lucsantosdev@gmail.com)
-- **Support me:** [Ko-Fi](https://ko-fi.com/lucsantosdev)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-lucsantosdev-blue?logo=linkedin)](https://www.linkedin.com/in/lucsantosdev)
+[![GitHub](https://img.shields.io/badge/GitHub-lucsantosdev-181717?logo=github)](https://github.com/lucsantosdev)
+[![Email](https://img.shields.io/badge/Gmail-lucsantosdev@gmail.com-181717?logo=gmail)](mailto:lucsantosdev@gmail.com)
+[![YouTube](https://img.shields.io/badge/YouTube-lucsantosdev-FF0000?logo=youtube&logoColor=white)](https://youtube.com/@lucsantosdev)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?logo=ko-fi)](https://ko-fi.com/lucsantosdev)
 
 ---
 
