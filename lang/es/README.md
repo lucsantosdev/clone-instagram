@@ -32,6 +32,20 @@ Crear un entorno práctico para:
 - 📖 Página complementaria sobre las 10 heurísticas de Jakob Nielsen
 - 🌗 Alternancia de tema claro/oscuro en las páginas principales
 
+
+## ▶️ Dónde visualizar:
+
+🔗 [Haz clic aquí](https://lucsantosdev-insta-ui.netlify.app/lang/es/index.html) para acceder al artículo interactivo.
+
+## 🧠 Objetivos de Aprendizaje (UI/UX)
+
+- Jerarquía visual y escaneabilidad
+- Densidad informativa y claridad de la tarea
+- Consistencia de componentes
+- Feedback y previsibilidad de la interacción
+- Heurísticas de usabilidad (Jakob Nielsen)
+- Documentación de decisiones de diseño
+
 ## 🗂️ Estructura Actual
 
 ```text
@@ -47,19 +61,6 @@ Crear un entorno práctico para:
 |- new-version/                      # clon de la versión nueva/evolucionada de la página de inicio de sesión
 |- heuristicas-jakob-nielsen.html    # guía complementaria de heurísticas
 ```
-
-## ▶️ Dónde visualizar:
-
-🔗 [Haz clic aquí](https://lucsantosdev.github.io/clone-instagram/lang/es/index.html) para acceder al artículo interactivo.
-
-## 🧠 Objetivos de Aprendizaje (UI/UX)
-
-- Jerarquía visual y escaneabilidad
-- Densidad informativa y claridad de la tarea
-- Consistencia de componentes
-- Feedback y previsibilidad de la interacción
-- Heurísticas de usabilidad (Jakob Nielsen)
-- Documentación de decisiones de diseño
 
 ## 📌 Observaciones
 

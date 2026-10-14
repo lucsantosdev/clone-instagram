@@ -32,6 +32,19 @@ Create a practical environment to:
 - 📖 Complementary page about Jakob Nielsen's 10 heuristics
 - 🌗 Light/dark theme toggle on the main pages
 
+## ▶️ Where to View:
+
+🔗 [Click here](https://lucsantosdev-insta-ui.netlify.app/lang/en/index.html) to access the interactive article.
+
+## 🧠 Learning Goals (UI/UX)
+
+- Visual hierarchy and scanability
+- Information density and task clarity
+- Component consistency
+- Feedback and interaction predictability
+- Usability heuristics (Jakob Nielsen)
+- Documentation of design decisions
+
 ## 🗂️ Current Structure
 
 ```text
@@ -47,19 +60,6 @@ Create a practical environment to:
 |- new-version/                      # clone of the new/evolved login page version
 |- heuristicas-jakob-nielsen.html    # complementary heuristics guide
 ```
-
-## ▶️ Where to View:
-
-🔗 [Click here](https://lucsantosdev.github.io/clone-instagram/lang/en/index.html) to access the interactive article.
-
-## 🧠 Learning Goals (UI/UX)
-
-- Visual hierarchy and scanability
-- Information density and task clarity
-- Component consistency
-- Feedback and interaction predictability
-- Usability heuristics (Jakob Nielsen)
-- Documentation of design decisions
 
 ## 📌 Notes
 
